@@ -1,0 +1,9 @@
+version: '3'
+services:
+  docker-python:
+    image: juhyung1021/docker-python
+    runtime: nvidia
+    ports:
+      - 18087:8080
+
+# docker-compose up -d
