@@ -2,8 +2,7 @@ FROM ubuntu:latest
 
 # 필요한 패키지 설치, cache 비우기
 RUN apt-get update && \
-    apt-get install -y curl sudo \
-    apt-get install -y pip
+    apt-get install -y curl sudo pip
 
 # 새로운 사용자 생성 및 비밀번호 설정
 ENV USER="user" \
