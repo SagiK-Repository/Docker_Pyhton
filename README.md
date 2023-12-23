@@ -64,3 +64,7 @@ docker build --no-cache -t docker-python .
 ```bash
 docker run -it --gpus all --name vscode-container -p 8080:8080 docker-python
 ```
+```bash
+docker-compose up -d
+```
+- docker-compose에서 nvidia-smi 오류시 (https://github.com/SagiK-Repository/Docker_Python/issues/2) 링크 참조
