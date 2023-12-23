@@ -4,7 +4,7 @@
 
 ### 바로 사용하기
 ```bash
-
+docker run -it --name vscode-container -p 18087:8080 juhyung1021/docker-python
 ```
 
 <br>
@@ -48,12 +48,19 @@ RUN code-server --install-extension "ms-python.python" \
 
 # code-server 시작
 ENTRYPOINT nohup code-server --bind-addr 0.0.0.0:8080 --auth password  ${WORKINGDIR}
-
-# docker build --no-cache -t vscode-docker .
-# docker run -it --name vscode-container -p 8080:8080 vscode-docker
 ```
+
+<br>
+
+### build
+```bash
+docker build --no-cache -t docker-python .
+```
+
+<br>
 
 ### run
 
 ```bash
+docker run -it --name vscode-container -p 8080:8080 docker-python
 ```
