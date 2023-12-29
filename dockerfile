@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 # 필요한 패키지 설치, cache 비우기
 RUN apt-get update && \
