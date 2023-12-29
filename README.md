@@ -5,6 +5,10 @@
 ### 바로 사용하기
 ```bash
 docker run -it --gpus all --name vscode-container -p 18087:8080 juhyung1021/docker-python
+
+# or
+
+nvidia-docker run -it -p 18087:8080 -d juhyung1021/docker-python
 ```
 
 <br>
