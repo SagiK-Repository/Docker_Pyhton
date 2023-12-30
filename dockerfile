@@ -22,4 +22,4 @@ RUN code-server --install-extension "ms-python.python" \
 ENTRYPOINT nohup code-server --bind-addr 0.0.0.0:8080 --auth password  ${WORKINGDIR}
 
 # docker build --no-cache -t docker-python .
-# docker run -it --gpus all --name docker-python -p 18087:8080 juhyung1021/docker-python
+# docker run -it --gpus all --name docker-python -p 18087:8080 -d juhyung1021/docker-python
